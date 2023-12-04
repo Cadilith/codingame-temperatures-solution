@@ -14,13 +14,9 @@ for (let i = 0; i < n; i++) {
 let result;
 const z = 0;
 
-if(n<0 || n>10000){
+if ( n < 0 || n > 10000 || n === 0 ) {
     result = 0;
-}
-if (n === 0) {
-    result = 0
 } else {
-
     inputs.sort((a, b) => {
         return Math.abs(z - a) - (Math.abs(z - b))
     });
